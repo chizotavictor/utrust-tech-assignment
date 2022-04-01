@@ -3,6 +3,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
   background-color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
 button {
@@ -21,7 +22,7 @@ button {
 }
 
 .brand {
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 20px;
   max-width: 100%;
   align-content: center;
@@ -36,7 +37,7 @@ button {
 
 .intro {
   max-width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -56,7 +57,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
-  /* background-color: rgb(165, 167, 162); */
 }
 
 .field > div {
@@ -73,4 +73,133 @@ button {
   font-family: "Courier New", Courier, monospace;
   font-size: 19px;
   padding: 5px;
+}
+
+.payment-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.payment-modal-logo {
+  width: 20%;
+}
+
+.payment-modal > .modal-header {
+  background-color: #fff;
+  color: white;
+  margin: auto;
+  margin-top: 5%;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.payment-modal > .modal-content {
+  background-color: #3f07af;
+  color: white;
+  margin: auto;
+  width: 31.5%;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.modal-content > .duration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #6932d4;
+  margin: 0px;
+  padding: 10px;
+}
+
+.duration > span {
+  font-weight: bold;
+}
+
+.modal-content > .confirmations {
+  margin-top: 30px;
+  background-color: #3f07af;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.confirmations > .amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmations > .amount > .digit {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.coin {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.conf {
+  display: flex;
+  flex-direction: column;
+}
+
+.conf > .count {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.conf > .note {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.duration > span {
+  font-size: 12px;
+}
+
+.modal-content > .signal {
+  margin-top: 30px;
+  background-color: #fff;
+  display: flex;
+  height: 180px;
+  border-radius: 0px 0px 8px 8px;
+  justify-content: space-around;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.signal {
+  padding: 10px;
+}
+
+.signal > img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -18,6 +18,7 @@ defmodule EthscanWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/verify", PageController, :verify
   end
 
   # Other scopes may use custom stacks.
