@@ -22,6 +22,7 @@ To start your Ethscan server:
 - Install dependencies with `mix deps.get`
 - Start Ethscan endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server
 - To run the test case: `mix test`
+  Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 System Design:
 
@@ -43,5 +44,3 @@ Blockers:
 - Managing the states on websockets. I was not able to find a way to disconnect server from client apart from timeout, or client channel disconnection `(channel.leave())`. But its fine I will do more research.
 
 - Writing tests with elixier was not that easy - I believe with time I will perfect it.
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
